@@ -1,5 +1,9 @@
+library(ggplot2)
+
 # download cars dataset
 data(mtcars)
+head(mtcars)
 
 # make a figure
-plot(mpg ~ hp, data = mtcars)
+ggplot(data = mtcars, aes(mpg, hp))+
+  geom_point() 

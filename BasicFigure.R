@@ -5,5 +5,5 @@ data(mtcars)
 
 # make a figure
 ggplot(mtcars) +
-  geom_point(aes(mpg, cyl)) + 
+  geom_point(aes(mpg, cyl, col = gear)) + 
   theme_classic()
